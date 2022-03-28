@@ -94,7 +94,6 @@ submitBtn.addEventListener('click', () => {
     if (currentQuiz < quizData.length) {
       loadQuiz();
     } else {
-      // show results
       quiz.innerHTML = `
         <h2>You answered correctly at ${score}/${quizData.length} questions.</h2> 
         <button onclick="location.reload()">Reload</button>
